@@ -1,0 +1,76 @@
+{% extends '_layouts/base.nunjucks' %}
+{% import "_modules/headers/header.nunjucks" as header %}
+{% import "_modules/sections/section.nunjucks" as section %}
+{% block content %}
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 m-0 p-0 carousel-column hide-overflow">
+       {% include '_html/carousel.html' %}
+        </div>
+
+
+        <div class="col-md-6 m-0 p-0 hide-overflow animated fadeIn">
+<!-- header -->
+{{ section.start('alt-section') }}
+{% include '_html/header.html' %}
+{{ section.end() }}
+<!-- end header -->
+
+<!-- subheader -->
+{{ section.start('subheader-section') }}
+{% include '_html/subheader.html' %}
+{{ section.end() }}
+<!-- end subheader -->
+
+<!-- description -->
+{{ section.start('description-section') }}
+{{ header.create('Description') }}
+{% include '_html/description.html' %}
+{{ section.end() }}
+<!-- end description -->
+
+
+
+<!-- silos -->
+{{ section.start('silos-section') }}
+{% include '_html/silos.html' %}
+{{ section.end() }}
+<!-- end silos -->
+
+
+<!-- features -->
+{{ section.start('features-section') }}
+{{ header.create('Features') }}
+{% include '_html/features.html' %}
+{{ section.end() }}
+<!-- end features -->
+
+<!-- map -->
+{{ section.start('map-section') }}
+{{ header.create('Map') }}
+{% include '_html/map.html' %}
+{{ section.end() }}
+<!-- end map -->
+
+
+
+
+<!-- contact -->
+{{ section.start('contact-section') }}
+{{ header.create('Contact') }}
+{% include '_html/contact.html' %}
+{{ section.end() }}
+<!-- end map -->
+
+         <footer>
+{{ section.start('footer-section') }}
+{% include '_html/footer.html' %}
+{{ section.end() }}
+        </footer>
+
+        </div>
+</div>
+
+
+
+{% endblock %}

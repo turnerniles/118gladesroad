@@ -1,0 +1,45 @@
+/**
+ * Styles for the Carousel
+ */
+
+.data-holder {
+  top:0px;
+  left:0px;
+  position:fixed;
+  width:50%;
+  height:100%;
+  @include max-screen(768px) { 
+  position:relative;
+  height:500px;
+  width:100%;
+  }
+}
+.carousel-wrapper {
+  height:100%;
+}
+.carousel-item {
+  width:100%;
+  height:100%;
+}
+.carousel-inner {
+  height:100%;
+}
+.carousel-item img {
+  position:relative;
+}
+.carousel {
+  height:100%;
+}
+.carousel-control-next  {
+  right:0px;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon {
+  width:30px;
+  height:30px;
+}
+.carousel-control-prev, .carousel-control-next {
+  background-color:$primary;
+  top:40%;
+  height:75px;
+  width:75px;
+}

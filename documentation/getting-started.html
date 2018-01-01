@@ -1,0 +1,257 @@
+<html>
+<head>
+	<link href="https://unpkg.com/blueprint-css@2.5.2/dist/blueprint.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+<style>
+img {
+	width:500px;
+	height:auto;
+}
+h1,h2,h3,h4,h5 {
+	display:block;
+}
+</style>
+	</head>
+<body>
+	<div bp-layout="row">
+		<div bp-layout="col 12@md">
+<h2 id="start-here">Start Here</h2>
+<p>Thank you for purchasing the <strong>Home - Single Property Website HTML Templates</strong></p>
+<p>This guide has the following parts. Please review each part to get a good understanding of the project structure.</p>
+<ol>
+<li><a href="#yeogurt">Yeogurt</a></li>
+<li><a href="#directory-structure">Directory Structure</a></li>
+<li><a href="#preview-html-page">Preview</a></li>
+<li><a href="#frontend-dependencies">Frontend Dependencies</a></li>
+<li><a href="#templating-engine">Templating Engine</a></li>
+<li><a href="#html-sections">HTML Sections</a></li>
+<li><a href="#customizing-styles">Customizing Styles</a></li>
+<li><a href="#customizing-javascript">Customizing Javascript</a></li>
+<li><a href="#meta-tags">Meta Tags</a></li>
+<li><a href="#google-maps">Google Maps</a></li>
+<li><a href="#carousel">Carousel</a></li>
+<li><a href="#precompiled-templates">Precompiled Templates</a></li>
+<li><a href="#real-estate-icons">RealEstate Icons</a></li>
+<li><a href="#tutorials">Tutorials</a></li>
+<li><a href="#support">Support</a></li>
+
+
+</ol>
+<h2 id="yeogurt">Yeogurt</h2>
+<p>The project has been scaffolded with a yeoman generator called <strong>yeogurt</strong>. You can learn more about the tool by viewing its <a href="https://github.com/larsonjj/generator-yeogurt">Github documentation</a>. The tool is <strong>NOT</strong> required to make any modifications to the project rather it can be used to further scaffold the project to fit your needs</p>
+<h2 id="directory-structure">Directory Structure</h2>
+<p>Inside the project you should see directory structure similar to the following :</p>
+<pre><code>root
+-<span class="ruby"> gulp
+</span>-<span class="ruby"> src
+</span>-<span class="ruby">- _data
+</span>-<span class="ruby">- _html
+</span>-<span class="ruby">- _images
+</span>-<span class="ruby">- _layouts
+</span>-<span class="ruby">- _modules
+</span>-<span class="ruby">- _scripts
+</span>-<span class="ruby">- _styles
+</span>-<span class="ruby">- fonts
+</span>-<span class="ruby"> prebuilt-templates</span>
+</code></pre>
+<p>
+  Directory structure follows <strong>Yeogurt</strong> standards. <br>
+ Folders prefixed with an underscore (_) will have it removed when moved to build target (ex: src/_images -> build/images).<br>
+ Folders NOT prefixed with underscore (_) will be copied to build target 1 to 1 (ex: src/fonts -> build/fonts)<br>
+</p>
+<h2 id="preview-html-page">Preview</h2>
+<p>To preview a project you need to have project dependencies installed as well as the gulp cli.</p>
+<p>Install <a href="https://gulpjs.org/getting-started">Gulp CLI</a> :</p>
+<pre><code>npm install gulp-<span class="hljs-keyword">cli</span> -g
+</code></pre>
+<p>Install project dependencies :</p>
+<pre><code>npm <span class="hljs-keyword">install</span>
+</code></pre>
+<p>Serve html files for preview:</p>
+<pre><code><span class="hljs-attribute">gulp serve</span>
+</code></pre>
+<p>Create a build :</p>
+<pre><code>gulp <span class="hljs-comment">--production<br /><br /></span></code></pre>
+
+<h4>Preview Precompiled</h4>
+<p>You do not need to have project dependencies installed to preview precompiled HTML templates in the <code>./templates</code> directory.</p>
+<h2 id="frontend-dependencies">Frontend Dependencies</h2>
+<p>Project templates have the following frontend dependencies. <code></code></p>
+<ul>
+<li><a href="https://jquery.com/download/">jQuery 3.1.1</a></li>
+<li><a href="https://github.com/jquery-validation/jquery-validation">jQuery Validation 1.17.0</a></li>
+<li> <a href="https://github.com/HubSpot/tether">Tether 1.4.3</a></li>
+<li><a href="https://getbootstrap.com/">Bootstrap 4.0.0-alpha.6</a></li>
+<li><a href="https://fontawesome.com/">(FREE) Font Awesome Version 5.0.2 </a></li>
+
+<li>Bootstrap 3 Glyphicons <a href="https://github.com/twbs/bootstrap-sass/tree/master/assets/fonts/bootstrap">here</a></li>
+</ul>
+<p>To install those dependencies run the following command in the root of the project:&nbsp;</p>
+<pre><code> <span class="hljs-comment">npm install</span></code></pre>
+<h2 id="templating-engine">Templating Engine</h2>
+<p>Project HTML templates are built with nunjucks <a href="https://mozilla.github.io/nunjucks/">templating engine</a>.</p>
+<h2 id="html-sections">HTML Sections</h2>
+
+<p>Project is composed of multiple HTML sections located in the <code>src/_html</code> directory. They are referenced in the <code>src/index.nunjucks</code> file.</p>
+
+<img src="assets/html-sections.png"/>
+
+
+
+
+<h2 id="customizing-styles">Customizing Styles</h2>
+<p>Project theme has been created with a CSS preprocessor called <a href="http://sass-lang.com/">SASS</a>. You may change the theme of the project by updating the SASS&nbsp;<code>$primary</code> variable in <code>src/_styles/main.scss</code>.</p>
+
+<img src="assets/primary-color.png"/>
+
+
+
+<h2 id="customizing-javascript">Customizing Javascript</h2>
+<p>Main javascript code is in <code>src/_scripts/main.js</code>. Frontend dependencies are referenced in the <pre>package.json</pre>pre>. Project uses <a href="http://browserify.org/">browserify</a> to bundle dependencies. Javascript libraries that do not follow CommonJS standards need to be <a href="https://github.com/thlorenz/browserify-shim">shimmed</a> by browserify-shim.</p>
+<b>package.json</b>
+<pre>
+	<code>
+    "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "jQuery": "./node_modules/jquery/dist/jquery.js",
+    "bootstrap": "./node_modules/bootstrap/dist/js/bootstrap.js",
+    "jqueryValidate": "./node_modules/jquery-validation/dist/jquery.validate.js"
+  },
+  "browserify-shim": {
+    "jQuery": "global:jQuery",
+    "bootstrap": {
+      "depends": [
+        "jQuery:jQuery",
+        "tether:Tether"
+      ]
+    },
+    "jqueryValidate": {
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  }
+  </code>
+</pre>
+
+
+
+<h2 id="meta-tags">Meta Tags</h2>
+<p>Meta tags and external dependencies are in <code>src/_layouts/base.nunjucks</code>.</p>
+<h2 id="google-maps">Google Maps</h2>
+<p>Google maps is loaded and initiated in the base layout <code>src/_layouts/base.nunjucks</code>. Its API key needs to be replaced with your own API key.&nbsp; The Google maps ID tags are in <code>src/_html/map.html</code>.&nbsp;</p>
+<h2 id="carousel">Carousel</h2>
+<p>Carousel uses the Bootstrap carousel <a href="https://getbootstrap.com/docs/4.0/components/carousel/">API's</a>. Carousel images are located in <code>src/_images/carousel</code> directory and are referenced in <code>src/_html/carousel.html</code>.</p>
+<h2 id="precompiled-templates">Precompiled Templates</h2>
+<p><code>./templates</code> directory contains precompiled HTML templates. Each template contains all the necessary javascript and stylesheet dependencies to get a website up and running.</p>
+<p>That directory contains 4 precompiled HTML templates :</p>
+<ul>
+<li>red</li>
+<li>teal</li>
+<li>blue</li>
+<li>yellow</li>
+</ul>
+<h4 id="styles">Styles</h4>
+<p>Precompiled template styles are located in <code>styles/main.css</code>.</p>
+<h4 id="javascript">Javascript</h4>
+<p>Javascript is located in <code>scripts/script.js</code>. Precompiled templates are compiled with browserify.</p>
+<h2 id="real-estate-icons">Real Estate Icons</h2>
+<p>Real Estate Icons can be added to HTML by referencing the real estate css classes located in the following SASS file <code>./src/_styles/realestate-icons.scss</code>.</p>
+<b style="display:block">CSS Map</b>
+<img src="assets/icons.png"/>
+
+
+<h2 id="tutorials">Tutorials</h2>
+
+<h4>Form Submission</h4>
+<p>
+After you have installed the necessary dependencies you may want to start modifying the templates to make it your own. 
+Start by going to the <code>./src/_scripts/main.js</code> directory and add an ajax call to save the the form submission information.
+
+</p>
+
+<pre>
+<code>
+
+$("form#submit-contact").validate({
+  rules: {
+    'name': "required",
+    'phone': {
+      required: true
+    },
+    'email': {
+      required: true,
+      email: true
+    },
+  },
+  messages: {
+    'name': "Please enter your name",
+    'phone': {
+      required: "Please enter a phone number"
+    },
+    'email': "Please enter a valid email address"
+  },
+  errorElement: "div",
+  errorPlacement: function(error, element) {
+    // Add the `help-block` class to the error element
+    error.addClass("form-control-feedback");
+
+    if (element.prop("type") === "checkbox") {
+      error.insertAfter(element.parent("label"));
+    } else {
+      error.insertAfter(element);
+    }
+  },
+  highlight: function(element, errorClass, validClass) {
+    $(element).parents(".form-group").addClass("has-danger").removeClass("has-success");
+  },
+  unhighlight: function(element, errorClass, validClass) {
+    $(element).parents(".form-group").addClass("has-success").removeClass("has-danger");
+  },
+   submitHandler: function(form) {
+    /**
+     *  If form validation is successful. Send me an email!
+     */
+   
+    var datastring = $(form).serialize();
+    $.ajax({
+                url: "http://someAPI.com/save",
+                type: "post",
+                data: datastring,
+                success: function(d) {
+                    alert(d);
+                }
+            });
+  }
+});
+
+</code>
+
+</pre>
+<h4>Change Styles</h4>
+<p>
+	If you want to change styles, open <code>./src/_styles/main.scss</code> and change the <code>$primary</code> to your primary hex color. <b style="display:block">Example : </b>
+	</p>
+	<pre>
+	<code>$primary:#1E8A96</code>
+</pre>
+
+
+
+<h2 id="support">Support</h2>
+<p>If you have have any questions or need help please reach out on ThemeForest, email or send me a tweet. If you like the templates please give them a star on ThemeForest.</p>
+<p>Twitter: <a href="https://twitter.com/notmilobejda">@notmilobejda</a>. <br /> Blog: <a href="https://mbejda.com">mbejda.com</a>.</p>
+
+
+</div>
+</div>
+</body>
+</html>

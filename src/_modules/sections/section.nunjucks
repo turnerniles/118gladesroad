@@ -1,0 +1,12 @@
+{% macro start(class) %}
+<section class="col-md-12 {{class}} pb-4 pt-4">
+{% endmacro %}
+
+{% macro end() %}
+</section>
+{% endmacro %}
+
+
+
+
+
