@@ -2,7 +2,9 @@
 
 # Open Source Single Property Website for Real Estate
 Open source single property website for real estate agents who want to market their properties on the web. 
-HTML Template and design are under MIT license.
+HTML Template and design are under MIT license. 
+## Demo
+You can demo the site here : http://innate-rule.surge.sh
 
 
 ## Features
@@ -40,7 +42,11 @@ The HTML templates have been scaffolded with the yeogurt generator. Information 
 ![](https://res.cloudinary.com/lqyghlh2f/image/upload/v1514851553/04_preview_xjdmb3.jpg)
 
 ## Contact
-If you like the theme/template feel free to shoot me a tweet [@notmilobejda](https://twitter.com/notmilobejda). I would love to know how you use it. Awesome feedback motivates me to keep going.  If you are experiencing any issues open a ticket. 
+If you like the theme/template feel free to shoot me a tweet [@notmilobejda](https://twitter.com/notmilobejda). I would love to know how you use it. Awesome feedback motivates me and helps me keep going.  If you are experiencing any issues open a ticket. 
+
+Twitter  [@notmilobejda](https://twitter.com/notmilobejda) <br>
+Blog [mbejda.com](https://mbejda.com) <br>
+LinkedIn : https://www.linkedin.com/in/milosbejda
 
 
 *If you need help installing it please contact me.*
