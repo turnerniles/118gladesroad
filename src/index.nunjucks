@@ -68,10 +68,10 @@
 {{ section.end() }}
         </footer>
 
-<div class="credits col-md-12">
+{# <div class="credits col-md-12">
 <a target="_blank" href="https://mbejda.com">Built by Milos Bejda</a>
+</div> #}
 </div>
-        </div>
 </div>
 
 
