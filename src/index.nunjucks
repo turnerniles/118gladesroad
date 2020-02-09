@@ -56,10 +56,10 @@
 
 
 <!-- contact -->
-{{ section.start('contact-section') }}
+{# {{ section.start('contact-section') }}
 {{ header.create('Contact') }}
 {% include '_html/contact.html' %}
-{{ section.end() }}
+{{ section.end() }} #}
 <!-- end map -->
 
          <footer>
