@@ -305,23 +305,56 @@
            lat: 42.2371634,
            lng: -71.1213962
        };
+
+      infowindow = new google.maps.InfoWindow();
+
        map = new google.maps.Map(document.getElementById('map'), {
            center: brush,
-           zoom: 8
+           zoom: 15
        });
 
-       var panorama = new google.maps.StreetViewPanorama(
+        var request = {
+          query: '1041 Brush Hill Road, Milton, MA 02186',
+          fields: ['name', 'geometry'],
+        };
+
+        service = new google.maps.places.PlacesService(map);
+
+        service.findPlaceFromQuery(request, function(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            for (var i = 0; i < results.length; i++) {
+              createMarker(results[i]);
+            }
+
+            map.setCenter(results[0].geometry.location);
+          }
+        });
+      }
+
+      function createMarker(place) {
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+
+
+       var info = new google.maps.StreetViewPanorama(
            document.getElementById('pano'), {
                position: brush,
                pov: {
-                   heading: 34,
+                   center: brush,
                    pitch: 10
                }
            });
-       map.setStreetView(panorama);
+       map.setStreetView(info);
    }
 </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJEgf0j1xFmJoDVerEVXflUbZnnqLZqww&callback=initMap" async defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJEgf0j1xFmJoDVerEVXflUbZnnqLZqww&libraries=places&callback=initMap" async defer></script>
     <script src="./scripts/main.js"></script>
     
   </div></body>
