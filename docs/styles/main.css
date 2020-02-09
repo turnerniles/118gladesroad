@@ -9729,7 +9729,7 @@ body {
 }
 
 .carousel-control-prev, .carousel-control-next {
-  background-color: #B30711;
+  background-color: #084B8E;
   top: 40%;
   height: 75px;
   width: 75px;
@@ -9763,19 +9763,19 @@ h5 {
 }
 
 a:link {
-  color: #ca5158;
+  color: #5281b0;
 }
 
 a:visited {
-  color: #d0656b;
+  color: #648eb8;
 }
 
 a:hover {
-  color: #ca5158;
+  color: #5281b0;
 }
 
 a:active {
-  color: #ca5158;
+  color: #5281b0;
 }
 
 /**
@@ -13231,17 +13231,17 @@ readers do not read off random characters that represent icons */
 }
 
 .subtitle {
-  color: #e8b5b8;
+  color: #b5c9dd;
 }
 
 .subheader-section {
-  background-color: #fbf3f3;
+  background-color: #f3f6f9;
 }
 
 .silo {
   height: 125px;
-  background-color: #B30711;
-  color: #fbf3f3;
+  background-color: #084B8E;
+  color: #f3f6f9;
 }
 
 .silo .count {
@@ -13249,19 +13249,19 @@ readers do not read off random characters that represent icons */
 }
 
 section.alt-section {
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #B30711), color-stop(100%, #9a060f));
-  background: -webkit-radial-gradient(center, circle cover, #B30711 0%, #9a060f 100%);
-  background: radial-gradient(center, circle cover, #B30711 0%, #9a060f 100%);
-  background-color: #B30711;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #084B8E), color-stop(100%, #073e76));
+  background: -webkit-radial-gradient(center, circle cover, #084B8E 0%, #073e76 100%);
+  background: radial-gradient(center, circle cover, #084B8E 0%, #073e76 100%);
+  background-color: #084B8E;
   color: #ffffff;
 }
 
 footer {
-  background-color: #78050b;
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #82050c), color-stop(100%, #69040a));
-  background: -webkit-radial-gradient(center, circle cover, #82050c 0%, #69040a 100%);
-  background: radial-gradient(center, circle cover, #82050c 0%, #69040a 100%);
-  background-color: #82050c;
+  background-color: #052c54;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #05325e), color-stop(100%, #042546));
+  background: -webkit-radial-gradient(center, circle cover, #05325e 0%, #042546 100%);
+  background: radial-gradient(center, circle cover, #05325e 0%, #042546 100%);
+  background-color: #05325e;
   color: #ffffff;
 }
 
@@ -13270,7 +13270,7 @@ footer h2 > a:hover {
 }
 
 footer h2 > a:link {
-  color: #fefdfd;
+  color: #fdfdfe;
 }
 
 /**

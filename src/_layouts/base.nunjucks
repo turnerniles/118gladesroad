@@ -44,7 +44,7 @@
        };
        map = new google.maps.Map(document.getElementById('map'), {
            center: brush,
-           zoom: 12
+           zoom: 8
        });
 
        var panorama = new google.maps.StreetViewPanorama(
