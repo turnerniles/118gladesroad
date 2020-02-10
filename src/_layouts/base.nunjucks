@@ -11,10 +11,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta property="fb:app_id" content="" />
   <meta property="og:type"   content="product" />
-  <meta property="og:url"    content="Put your own URL to the object here" />
+  <meta property="og:url"    content="https://1041brushhillroad.com" />
   <meta property="og:title"  content="Sample Product" />
   <meta property="og:image"  content="https://s-static.ak.fbcdn.net/images/devsite/attachment_blank.png" />
-  <title>Home | Responsive Single Property Real Estate Website Template</title>
+  <title>For Sale: 1041 Brush Hill Road</title>
   <meta name="description" content=""/>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
@@ -69,6 +69,11 @@
       }
 
       function createMarker(place) {
+       var brush = {
+           lat: 42.2371634,
+           lng: -71.1213962
+       };
+
         var marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location

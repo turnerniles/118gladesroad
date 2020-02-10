@@ -24,7 +24,7 @@
 
 <!-- description -->
 {{ section.start('description-section') }}
-{{ header.create('Description') }}
+{{ header.create('Property Overview') }}
 {% include '_html/description.html' %}
 {{ section.end() }}
 <!-- end description -->
@@ -32,9 +32,9 @@
 
 
 <!-- silos -->
-{{ section.start('silos-section') }}
+{# {{ section.start('silos-section') }}
 {% include '_html/silos.html' %}
-{{ section.end() }}
+{{ section.end() }} #}
 <!-- end silos -->
 
 
